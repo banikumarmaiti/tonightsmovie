@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  username: MyString
+  pwdHash: MyString
+  email: MyString
+  fullName: MyString
+  isPushAllowed: false
+  tsCreated: 2013-08-21 21:38:33
+  tsLastActivity: 2013-08-21 21:38:33
+
+two:
+  username: MyString
+  pwdHash: MyString
+  email: MyString
+  fullName: MyString
+  isPushAllowed: false
+  tsCreated: 2013-08-21 21:38:33
+  tsLastActivity: 2013-08-21 21:38:33

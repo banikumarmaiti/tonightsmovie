@@ -1,0 +1,35 @@
+<h1>Listing users</h1>
+
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Pwdhash</th>
+    <th>Email</th>
+    <th>Fullname</th>
+    <th>Ispushallowed</th>
+    <th>Tscreated</th>
+    <th>Tslastactivity</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.username %></td>
+    <td><%= user.pwdHash %></td>
+    <td><%= user.email %></td>
+    <td><%= user.fullName %></td>
+    <td><%= user.isPushAllowed %></td>
+    <td><%= user.tsCreated %></td>
+    <td><%= user.tsLastActivity %></td>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User', new_user_path %>

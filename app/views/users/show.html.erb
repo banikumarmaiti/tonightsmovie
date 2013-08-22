@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Username:</b>
+  <%= @user.username %>
+</p>
+
+<p>
+  <b>Pwdhash:</b>
+  <%= @user.pwdHash %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>Fullname:</b>
+  <%= @user.fullName %>
+</p>
+
+<p>
+  <b>Ispushallowed:</b>
+  <%= @user.isPushAllowed %>
+</p>
+
+<p>
+  <b>Tscreated:</b>
+  <%= @user.tsCreated %>
+</p>
+
+<p>
+  <b>Tslastactivity:</b>
+  <%= @user.tsLastActivity %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
