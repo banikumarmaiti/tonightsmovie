@@ -7,8 +7,6 @@
     <th>Email</th>
     <th>Fullname</th>
     <th>Ispushallowed</th>
-    <th>Tscreated</th>
-    <th>Tslastactivity</th>
     <th></th>
     <th></th>
     <th></th>
@@ -21,8 +19,6 @@
     <td><%= user.email %></td>
     <td><%= user.fullName %></td>
     <td><%= user.isPushAllowed %></td>
-    <td><%= user.tsCreated %></td>
-    <td><%= user.tsLastActivity %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
     <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>

@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130822043833) do
+ActiveRecord::Schema.define(:version => 20130902170526) do
+
+  create_table "movies", :force => true do |t|
+    t.string   "title"
+    t.date     "releaseDate"
+    t.string   "language"
+    t.string   "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "posts", :force => true do |t|
     t.string   "name"
@@ -27,10 +36,8 @@ ActiveRecord::Schema.define(:version => 20130822043833) do
     t.string   "email"
     t.string   "fullName"
     t.boolean  "isPushAllowed"
-    t.datetime "tsCreated"
-    t.datetime "tsLastActivity"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
 end

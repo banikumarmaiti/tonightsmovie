@@ -1,0 +1,27 @@
+    1  git branch
+    2  git remote
+    3  cat .git/refs/remotes/heroku/master 
+    4  git config -l
+    5  bundle install --without production
+    6  bundle update
+    7  bundle install --without production
+    8  git config -l
+    9  git log
+   10  git remote add github git@github.com:banikumarmaiti/tonightsmovie.git
+   11  git push -u github master
+   12  git remote --help
+   13  git remote rm github
+   14  git remote add github https://github.com/banikumarmaiti/tonightsmovie.git
+   15  git remote
+   16  git config -l
+   17  git push -u github master
+   18  rails generate scaffold User username:string pwdHash:string email:string fullName:string isPushAllowed:boolean tsCreated:datetime tsLastActivity:datetime
+   19  bundle exec rake db:migrate
+   20  git add .
+   21  git commit -m 'As of 11pm'
+   22  git push -u github master
+   23  rails remove_column :users, :tsLastActivity
+   24  rails generate migration RemoveColumns
+   25  rails generate migration RemoveTimestampsFromUsers tsCreated:datetime tsLastActivity:datetime
+   26  bundle exec rake db:migrate
+   27  history > commands_history.txt
